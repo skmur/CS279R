@@ -1,0 +1,8 @@
+----------------
+Sonia Murthy
+CS 279R - HW0
+----------------
+
+Instructions: start prototype by opening todo.html
+References: code was copied from https://www.w3schools.com/howto/howto_js_todolist.asp and modified slightly
+Extra functionality: zebra highlighting, making sure they add at least one list item, highlighting list item when cursor goes over it, being able to remove items from list when they're not needed

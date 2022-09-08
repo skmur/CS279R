@@ -1,0 +1,29 @@
+<!-- Code copied from https://www.w3schools.com/howto/howto_js_todolist.asp and modified slightly -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- desribe metadata of the html doc, setting the viewport to make your website look good on all devices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to external style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">Sonia's To Do List</h2>
+        <!-- define text input field for typing in new to-dos -->
+        <input type="text" id="myInput" placeholder="need to do...">
+        <!-- Create a new list item when clicking on the "Add" button -->
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    <!-- pre-load some list items -->
+    <ul id="myUL">
+        <li>Acquire living room furniture</li>
+        <li class="checked">Finish Elena's homework assignment</li>
+        <li>Figure out life</li>
+    </ul>
+    <!-- point to an external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
