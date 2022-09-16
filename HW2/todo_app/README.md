@@ -1,16 +1,10 @@
-# todo_app
+----------------
+Sonia Murthy
+CS 279R - HW1
+----------------
 
-A new Flutter project.
+Instructions: 
+1. open in vscode with flutter extensions installed (see https://docs.flutter.dev/get-started/editor?tab=vscode)
+2. press F5 to launch app
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Code copied from and modified: https://mobikul.com/how-to-make-the-to-do-list-in-the-flutter/
