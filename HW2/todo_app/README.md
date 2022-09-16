@@ -1,6 +1,6 @@
 ----------------
 Sonia Murthy
-CS 279R - HW1
+CS 279R - HW2
 ----------------
 
 Instructions: 
