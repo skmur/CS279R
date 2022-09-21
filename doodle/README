@@ -1,0 +1,13 @@
+----------------
+Sonia Murthy
+CS 279R - Doodle
+----------------
+
+HTML, CSS, JS -based user testable implementation of Doodle.
+
+Instructions: 
+1. open doodle.html in browser
+
+Sources:
+CSS table styling from: https://www.w3schools.com/css/css_table.asp
+3-state checkboxes to indicate "yes" "if need be" and "no" availability: https://css-tricks.com/indeterminate-checkboxes/ 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CSS table code from: https://www.w3schools.com/css/css_table.asp -->
+    <style>
+        body{
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #customers {
+            align-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td, #customers th {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 8px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        #customers td:nth-child(even){background-color: #f2f2f2;}
+
+        /* #customers tr:hover {background-color: #ddd;} */
+
+        #customers th {
+            padding-top: 0px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .submit {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        div {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- indeterminate checkbox function code from: https://css-tricks.com/indeterminate-checkboxes/ -->
+    <script>
+        // function to rotate between 3 states for checkboxes
+        function ts(cb) {
+            if (cb.readOnly) cb.checked=cb.readOnly=false;
+            else if (!cb.checked) cb.readOnly=cb.indeterminate=true;
+        }
+        // function to have submit button redirect to html file
+        function submitBtn() {
+            location.href = "submit.html"
+            }
+    </script>
+</head>
+<body>
+
+<h1>Sonia's Doodle Poll</h1>
+<div> Select your preferred times. I will pick the best time. <br>
+    Click once to choose "yes" (✓), click twice to choose "if need be" (-).
+</div>
+<table id="customers">
+  <tr>
+    <th><h3>September 26</h3> 1:00pm <br> 1:30pm </th>
+    <th><h3>September 26</h3> 3:30pm <br> 4:00pm </th>
+    <th><h3>September 27</h3> 12:00pm <br> 12:30pm </th>
+    <th><h3>September 27</h3>  2:30pm <br> 3:00pm </th>
+    <th><h3>September 28</h3>  3:00pm <br> 3:30pm </th>
+  </tr>
+  <tr>
+    <!-- checkboxes use ts() function to rotate between "yes" "if need be" and "preferred" states -->
+    <td><input type="checkbox" id="cb1" onclick="ts(this)"></td>
+    <td><input type="checkbox" id="cb1" onclick="ts(this)"></td>
+    <td><input type="checkbox" id="cb1" onclick="ts(this)"></td>
+    <td><input type="checkbox" id="cb1" onclick="ts(this)"></td>
+    <td><input type="checkbox" id="cb1" onclick="ts(this)"></td>
+  </tr>
+</table>
+
+<!-- submit button redirects to new page -->
+<button class="submit" onclick="submitBtn()">Submit</button>
+
+</body>
+</html>
