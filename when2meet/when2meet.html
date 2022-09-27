@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
  
   <style>
+    /* all selectable cells styling */
     #feedback { 
         font-size: .4em; 
     }
@@ -32,9 +33,12 @@
         text-align: left; 
         
     }
+    /* add dashed border to every 2nd row to mark half-hour intervals */
     #selectable li:nth-child(8n+5), #selectable li:nth-child(8n+6),#selectable li:nth-child(8n+7),#selectable li:nth-child(8n+8) {
         border-bottom: dotted 1px;
     }
+
+    /* all heading styling */
     #headings {
         list-style-type: none; 
         margin: 0; 
@@ -95,6 +99,7 @@
     <div class="table">
         <h3>Click and drag to select all the 30 minute increments that work for you.</h3>
     </div>
+    <!-- column headers for dates -->
     <div class="table">
         <ul id="headings">
           <li class=".ui-widget-header"><b>September 26</b></li>
@@ -103,6 +108,7 @@
           <li class=".ui-widget-header"><b>September 29</b></li>
         </ul>
     </div>
+    <!-- cells to select times -->
     <div class="table">
         <ul id="selectable">
             <li class="ui-state-default">8:30am</li>
