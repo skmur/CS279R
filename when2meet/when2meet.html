@@ -1,0 +1,156 @@
+<!-- https://stackoverflow.com/questions/9578162/highlighting-table-cells-on-mouse-drag -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>when2meet</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ 
+  <style>
+    #feedback { 
+        font-size: .4em; 
+    }
+    #selectable .ui-selected { 
+        background: #11a609;
+    }
+    #selectable {
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0; 
+        width: 450px; }
+    #selectable li { 
+        border: 1px solid rgb(64, 64, 64);
+        background: #fac3c3; 
+        padding: 0px; 
+        float: left; 
+        width: 100px; 
+        height: 30px; 
+        font-size: .3em; 
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left; 
+        
+    }
+    #selectable li:nth-child(8n+5), #selectable li:nth-child(8n+6),#selectable li:nth-child(8n+7),#selectable li:nth-child(8n+8) {
+        border-bottom: dotted 1px;
+    }
+    #headings {
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0; 
+        width: 450px; }
+    #headings li { 
+        background: #ffffff; 
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px; 
+        float: left; 
+        width: 102px; 
+        height: 25px; 
+        font-size: .7em; 
+        text-align: center; 
+    }
+	ul#headings li {
+		display: inline;
+        text-align: center;
+	}
+    .table {
+        display: table;   /* Allow the centering to work */
+        margin: 0 auto;
+    }
+    h3 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .submit {
+        background-color: #11a609; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: left;
+        text-decoration: none;
+        font-size: .7em;
+        margin-top: 20px;
+    }
+
+</style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#selectable" ).selectable();
+    // make multiple selections default:
+    // https://stackoverflow.com/questions/5288118/jquery-ui-selectable-making-multiple-select-default/6067386
+    $("#selectable").on("selectablestart", function (event, ui) {
+        event.originalEvent.ctrlKey = true;
+    });
+  } );
+  // function to have submit button redirect to html file
+  function submitBtn() {
+    location.href = "submit.html"
+    }
+  </script>
+</head>
+<body>
+    <div class="table">
+        <h3>Click and drag to select all the 30 minute increments that work for you.</h3>
+    </div>
+    <div class="table">
+        <ul id="headings">
+          <li class=".ui-widget-header"><b>September 26</b></li>
+          <li class=".ui-widget-header"><b>September 27</b></li>
+          <li class=".ui-widget-header"><b>September 28</b></li>
+          <li class=".ui-widget-header"><b>September 29</b></li>
+        </ul>
+    </div>
+    <div class="table">
+        <ul id="selectable">
+            <li class="ui-state-default">8:30am</li>
+            <li class="ui-state-default">8:30am</li>
+            <li class="ui-state-default">8:30am</li>
+            <li class="ui-state-default">8:30am</li>
+            <li class="ui-state-default">9:00am</li>
+            <li class="ui-state-default">9:00am</li>
+            <li class="ui-state-default">9:00am</li>
+            <li class="ui-state-default">9:00am</li>
+            <li class="ui-state-default">9:30am</li>
+            <li class="ui-state-default">9:30am</li>
+            <li class="ui-state-default">9:30am</li>
+            <li class="ui-state-default">9:30am</li>
+            <li class="ui-state-default">10:00am</li>
+            <li class="ui-state-default">10:00am</li>
+            <li class="ui-state-default">10:00am</li>
+            <li class="ui-state-default">10:00am</li>
+            <li class="ui-state-default">10:30am</li>
+            <li class="ui-state-default">10:30am</li>
+            <li class="ui-state-default">10:30am</li>
+            <li class="ui-state-default">10:30am</li>
+            <li class="ui-state-default">11:00am</li>
+            <li class="ui-state-default">11:00am</li>
+            <li class="ui-state-default">11:00am</li>
+            <li class="ui-state-default">11:00am</li>
+            <li class="ui-state-default">11:30am</li>
+            <li class="ui-state-default">11:30am</li>
+            <li class="ui-state-default">11:30am</li>
+            <li class="ui-state-default">11:30am</li>
+            <li class="ui-state-default">12:00pm</li>
+            <li class="ui-state-default">12:00pm</li>
+            <li class="ui-state-default">12:00pm</li>
+            <li class="ui-state-default">12:00pm</li>
+            <li class="ui-state-default">12:30pm</li>
+            <li class="ui-state-default">12:30pm</li>
+            <li class="ui-state-default">12:30pm</li>
+            <li class="ui-state-default">12:30pm</li>
+            <li class="ui-state-default">1:00pm</li>
+            <li class="ui-state-default">1:00pm</li>
+            <li class="ui-state-default">1:00pm</li>
+            <li class="ui-state-default">1:00pm</li>
+        </ul>
+    </div>
+    <div class="table">
+        <!-- submit button redirects to new page -->
+        <button class="submit" onclick="submitBtn()">Submit</button>
+    </div>
+    
+</body>
+</html>

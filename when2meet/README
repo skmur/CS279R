@@ -1,0 +1,13 @@
+----------------
+Sonia Murthy
+CS 279R - when2meet
+----------------
+
+HTML, CSS, JS -based user testable implementation of when2meet.
+
+Instructions: 
+1. open when2meet.html in browser
+
+Sources:
+Click and drag CSS and JS: https://stackoverflow.com/questions/9578162/highlighting-table-cells-on-mouse-drag
+Maintain multiple selections at the same time: https://stackoverflow.com/questions/5288118/jquery-ui-selectable-making-multiple-select-default/6067386
