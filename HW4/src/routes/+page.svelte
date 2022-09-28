@@ -49,10 +49,13 @@
     {#each todos as item, index}
     <li class:complete={item.isComplete}>
         <span>
+            <!-- display task -->
             {item.task}
         </span>
         <span>
+            <!-- button to mark todo item as complete -->
             <button on:click={() => markToDoAsComplete(index)}>✓</button>
+            <!-- button to delete todo item -->
             <button on:click={() => deleteTodo(index)}>✘</button>
         </span>
     </li>

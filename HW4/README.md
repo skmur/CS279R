@@ -3,6 +3,17 @@ Sonia Murthy
 CS 279R - HW4
 ----------------
 
+## Sources used:
+https://www.youtube.com/watch?v=AV04qN6frmE
+https://www.youtube.com/watch?v=50s6IKO8028&list=PLm_Qt4aKpfKiGbdjaHdOpry6Neza0etxZ&index=3
+https://www.youtube.com/watch?v=Npc_MOXZKjM&list=PLm_Qt4aKpfKiGbdjaHdOpry6Neza0etxZ&index=4
+
+## Note:
+node_modules directory was not uploaded to github
+
+----------------
+Svelte instructions: 
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
@@ -43,9 +54,6 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 
-## Sources:
-https://www.youtube.com/watch?v=AV04qN6frmE
-https://www.youtube.com/watch?v=50s6IKO8028&list=PLm_Qt4aKpfKiGbdjaHdOpry6Neza0etxZ&index=3
-https://www.youtube.com/watch?v=Npc_MOXZKjM&list=PLm_Qt4aKpfKiGbdjaHdOpry6Neza0etxZ&index=4
+
 
 
