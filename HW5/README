@@ -1,0 +1,10 @@
+----------------
+Sonia Murthy
+CS 279R - HW5
+----------------
+
+Instructions: 
+1. pip install Flask
+2. pip install Flask-SQLAlchemy
+3. python app.py
+4. go to http://127.0.0.1:5000
