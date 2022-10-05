@@ -8,3 +8,5 @@ Instructions:
 2. pip install Flask-SQLAlchemy
 3. python app.py
 4. go to http://127.0.0.1:5000
+
+Code reference: https://www.python-engineer.com/posts/flask-todo-app/
