@@ -1,0 +1,21 @@
+<script>
+  import Task from './Task.svelte';
+  import { TasksCollection } from '../api/TasksCollection';
+  import TaskForm from './TaskForm.svelte';
+
+  $m: tasks = TasksCollection.find({}, { sort: { createdAt: -1 } }).fetch()
+
+</script>
+
+
+<div class="container">
+  <header>
+    <h1>Todo List</h1>
+  </header>
+
+  <ul>
+    {#each tasks as task (task._id)}
+        <Task task={task} />
+    {/each}
+  </ul>
+</div>
